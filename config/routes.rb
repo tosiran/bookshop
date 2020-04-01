@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-
+  
+  resources :tweets, only: :index
 
   root to: 'users#index'
   get 'users/index'
