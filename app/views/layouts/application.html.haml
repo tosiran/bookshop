@@ -9,4 +9,10 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
+    .header 
+      .header__bar
+        %h2.header__bar__logo 
+          = link_to root_path, class:"logo" do
+            %h2 bookshop
+
     = yield
